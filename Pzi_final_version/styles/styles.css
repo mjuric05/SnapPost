@@ -1,0 +1,275 @@
+  html {
+    position: relative;
+    min-height: 100%;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+  }
+
+  h1 {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 50px;
+  }
+  
+  header {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    padding: 1em;
+  }
+  
+  nav {
+    background-color: #f1f1f1;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin: 0 1em;
+  }
+  
+  nav a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  main {
+    padding: 1em;
+  }
+  
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: blue;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .profile {
+    background-color: lightblue;
+    color: white;
+    text-align: left;
+    padding: 1em;
+    font-size: 18px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-top: 20px;
+    float: right;
+    margin: 20px;
+    position: relative;
+  }
+
+  .profile h2, .profile p {
+    display: block;
+  }
+
+  .profile img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-right: 20px;
+  }
+
+  .likebutton {
+    background-color: gray;
+    color: white;
+    border: 2px solid white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    scale: 80%;
+  }
+
+  .likebutton.clicked {
+    background-color: red;
+  }
+
+  .likebutton:hover {background-color: red}
+
+  .likebutton:active {
+    background-color: red;
+    box-shadow: 0 1px red;
+    transform: translateY(0.5px);
+    border: transparent;
+  }
+
+  .bookmarkbutton {
+    background-color: gray;
+    color: white;
+    border: 2px solid white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    scale: 80%;
+  } 
+
+  .bookmarkbutton:hover {background-color: #0d6efd}
+
+  .bookmarkbutton.pressed {
+      background-color: black;
+      color: white;
+   }
+
+  .bookmarkbutton:active {
+    background-color: black;
+    box-shadow: 0 1px black;
+    transform: translateY(0.5px);
+    border: transparent;
+  }
+
+  .image-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+    position: relative; /* make the image-card div a reference for positioning the comments div */
+  }
+  
+  .image-card img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-right: 20px;
+  }
+  
+  .image-card .content {
+    flex: 1;
+  }
+  
+  .image-card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .image-card p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .comments-section {
+    background-color: lightgray;
+    padding: 10px;
+    margin-top: auto; /* position the comments div to the bottom */
+    border: 1px solid gray;
+  }
+
+  .add-comment-button {
+    background-color: gray;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    scale: 80%;
+  }
+
+  .add-comment-button:hover {background-color: #0d6efd;}
+
+  .remove-comment-button {
+    background-color: gray;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    scale: 80%;
+  }
+
+  .remove-comment-button:hover {background-color: red;}
+
+  .addImageCardButton { 
+    cursor: pointer;
+    outline: 0;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 6px 12px;
+    font-size: 1rem;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    color: #0d6efd;
+    border-color: #0d6efd;
+  }
+
+  .addImageCardButton:hover {
+    color: #fff;
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+  }
+
+/*Check out this mf*/
+
+  .changeProfileCredentials {
+    cursor: pointer;
+    outline: 0;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 6px 12px;
+    font-size: 1rem;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    color: #0d6efd;
+    border-color: #0d6efd;  
+  }
+
+  .changeProfileCredentials:hover {
+    color: #fff;
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+  }
+
+  .deleteImageCardButton {
+    cursor: pointer;
+    outline: 0;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 6px 12px;
+    font-size: 1rem;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    color: #0d6efd;
+    border-color: #0d6efd;     
+  }
+
+  .deleteImageCardButton:hover {
+    color: #fff;
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+  }
